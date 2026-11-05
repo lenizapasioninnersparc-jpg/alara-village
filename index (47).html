@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Alara Village | Private Gated Residences, Book a Viewing</title>
+  <meta name="description" content="Alara Village is a private, gated enclave of two-storey modern Filipino homes with a clubhouse, pool, parks and recreation. Preselling from ₱9.2M. Book a private viewing.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#1f4d2e">
+  <meta name="author" content="Alara Village">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Alara Village">
+  <meta property="og:title" content="Alara Village | Private Gated Residences, Book a Viewing">
+  <meta property="og:description" content="A private enclave of thoughtfully designed two-storey homes with a clubhouse, pool and parks. Preselling from ₱9.2M. Viewings by appointment.">
+
+  <!-- X / Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Alara Village | Private Gated Residences, Book a Viewing">
+  <meta name="twitter:description" content="A private enclave of thoughtfully designed two-storey homes with a clubhouse, pool and parks. Preselling from ₱9.2M.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Alara Village",
+    "description": "Alara Village is a private, gated residential community of two-storey modern Filipino homes. Viewings by appointment."
+  }
+  </script>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    #app {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      border: 0;
+      background: #ffffff;
+    }
+
+    #loading {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+      color: #1f4d2e;
+      z-index: 10;
+      transition: opacity 0.2s ease;
+    }
+
+    .loader {
+      text-align: center;
+      padding: 24px;
+    }
+
+    .loader strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .loader span {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 15px;
+      border: 4px solid #dde5de;
+      border-top-color: #1f4d2e;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .fallback {
+      display: none;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      font-family: Arial, sans-serif;
+      color: #172033;
+      line-height: 1.7;
+    }
+
+    .fallback h1 {
+      color: #1f4d2e;
+      margin-bottom: 12px;
+    }
+
+    .fallback p {
+      color: #4a5a4f;
+    }
+
+    noscript .fallback {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="loading" aria-live="polite">
+    <div class="loader">
+      <div class="spinner" aria-hidden="true"></div>
+      <strong>Loading Alara Village...</strong>
+    </div>
+  </div>
+
+  <!-- Actual Alara Village page hosted by Google Apps Script -->
+  <iframe
+    id="app"
+    src="https://script.google.com/macros/s/AKfycbwzJohdgNC8GKCHHSXwxWO4ZO1YUfqHmx1MrkXreVUbJwT_0kYZVtOvIxAa-ERZ8bj8bQ/exec"
+    title="Alara Village"
+    allow="clipboard-write"
+    loading="eager"
+    referrerpolicy="strict-origin-when-cross-origin"
+  ></iframe>
+
+  <noscript>
+    <div class="fallback">
+      <h1>Alara Village</h1>
+      <p>Alara Village is a private, gated enclave of two-storey modern Filipino homes with a clubhouse, pool, parks and recreation. Viewings are by appointment.</p>
+      <p>Please enable JavaScript to view the full page and book a viewing.</p>
+    </div>
+  </noscript>
+
+  <script>
+    (function () {
+      const iframe = document.getElementById('app');
+      const loading = document.getElementById('loading');
+
+      function hideLoading() {
+        if (!loading) return;
+        loading.style.opacity = '0';
+        setTimeout(function () {
+          loading.style.display = 'none';
+        }, 220);
+      }
+
+      if (iframe) {
+        iframe.addEventListener('load', hideLoading);
+        setTimeout(hideLoading, 12000);
+      }
+    })();
+  </script>
+
+</body>
+</html>
